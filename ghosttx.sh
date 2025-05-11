@@ -17,7 +17,7 @@ generate_commit_message() {
 }
 
 # Запускаем цикл для 10 коммитов
-for i in {1..10}; do
+for i in {1..20}; do
   echo "entry $i" >> log.txt                       # Запись в лог
   git add .                                        # Добавляем все изменения
   export GIT_AUTHOR_DATE="$(date -d "$((RANDOM % 100 + 1)) days ago" '+%Y-%m-%dT12:00:00')"  # Дата автора
